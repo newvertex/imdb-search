@@ -3,6 +3,7 @@ const omdb = require('omdb');
 class Imdb {
   constructor() {
     this.movies = [];
+    this.lastMovie = null;
   }
 
   search(name = '', year = '', type = '') {
@@ -58,9 +59,13 @@ class Imdb {
             reject('Movie not found!');
           }
 
+          this.lastMovie = movie;
+
           resolve(movie);
         });
     });
   }
 
 }
+
+module.exports = Imdb;
