@@ -68,4 +68,4 @@ class Imdb {
 
 }
 
-module.exports = Imdb;
+module.exports = new Imdb();

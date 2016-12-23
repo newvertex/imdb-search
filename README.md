@@ -10,7 +10,7 @@ const imdb = require('imdb-search');
 // Search for a Movie, result is an array of movies
 imdb.search('Doctor Strange')
   .then(result => {
-    for (let movie in result) {
+    for (let movie of result) {
       console.log(`${movie.id}: ${movie.title} - ${movie.year}`);
     }
   })
@@ -22,7 +22,7 @@ imdb.search('Doctor Strange')
 // Because of omdb dependency movies can have this types: `series, movie, episode`
 imdb.search('Doctor Strange', 2016, 'movie')
     .then(result => {
-      for (let movie in result) {
+      for (let movie of result) {
         console.log(`${movie.id}: ${movie.title} - ${movie.year}`);
       }
     })
@@ -36,7 +36,7 @@ imdb.search('Doctor Strange', 2016, 'movie')
     return imdb.get(0); // Select first movie on the list
   })
   .then(movie => {
-    console.log(`${movie.id}: ${movie.title} - ${movie.year}`);
+    console.log(`${movie.title} - ${movie.year}`);
   })
   .catch(err => {
     console.log(err);

@@ -1,12 +1,25 @@
 {
   "name": "imdb-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A wrapper on omdb module to easy select correct wanted item with all info",
   "main": "index.js",
-  "repository": "https://github.com/newvertex/imdb-search",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newvertex/imdb-search.git"
+  },
+  "keywords": [
+    "imdb",
+    "omdb",
+    "search",
+    "movies"
+  ],
   "author": "Mojtaba Rabiei <mojtaba.r127@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "omdb": "^0.7.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/newvertex/imdb-search/issues"
+  },
+  "homepage": "https://github.com/newvertex/imdb-search#readme"
 }
