@@ -1,0 +1,12 @@
+{
+  "name": "imdb-search",
+  "version": "0.0.1",
+  "description": "A wrapper on omdb module to easy select correct wanted item with all info",
+  "main": "index.js",
+  "repository": "https://github.com/newvertex/imdb-search",
+  "author": "Mojtaba Rabiei <mojtaba.r127@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "omdb": "^0.7.0"
+  }
+}
