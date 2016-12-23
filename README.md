@@ -3,6 +3,16 @@
 
 A wrapper on omdb module to easy select correct wanted item with all info
 
+## Installation
+with npm:
+```bash
+$ npm install --save imdb-search    
+
+```
+or with yarn:  
+```bash
+$ yarn add imdb-search
+```
 ## Example
 ```js
 const imdb = require('imdb-search');
