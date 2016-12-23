@@ -1,4 +1,6 @@
 # imdb-search
+[![NPM](https://nodei.co/npm/imdb-search.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/imdb-search/)  
+
 A wrapper on omdb module to easy select correct wanted item with all info
 
 ## Example
