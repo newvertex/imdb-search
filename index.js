@@ -46,7 +46,14 @@ class Imdb {
   }
 
   get(id) {
-    let imdb = this.getImdb(id);
+    let imdb = '';
+
+    if (typeof id === 'string' && id.startsWith('tt')) {
+        imdb = id;
+    } else {
+      imdb = this.getImdb(parseInt(id));
+    }
+
     let options = { fullPlot: true, tomatoes: true };
 
     return new Promise((resolve, reject) => {
