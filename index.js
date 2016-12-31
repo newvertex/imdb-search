@@ -21,7 +21,7 @@ class Imdb {
             reject(err);
           }
 
-          if (!movies.length) {
+          if (typeof movies === 'undefined' || !movies.length) {
             reject('Movie not found!');
           }
 
@@ -62,7 +62,7 @@ class Imdb {
             reject(err);
           }
 
-          if (!movie) {
+          if (typeof movies === 'undefined' || !movie) {
             reject('Movie not found!');
           }
 
