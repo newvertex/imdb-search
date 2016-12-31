@@ -62,7 +62,7 @@ class Imdb {
             reject(err);
           }
 
-          if (typeof movies === 'undefined' || !movie) {
+          if (typeof movie === 'undefined' || !movie) {
             reject('Movie not found!');
           }
 
