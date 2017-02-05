@@ -1,6 +1,6 @@
 {
   "name": "imdb-search",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A wrapper on omdb module to easy select correct wanted item with all info",
   "main": "index.js",
   "repository": {

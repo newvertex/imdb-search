@@ -23,14 +23,14 @@ class Imdb {
 
           if (typeof movies === 'undefined' || !movies.length) {
             reject('Movie not found!');
-          }
+          } else {
+            for (let i = 0; i < movies.length; i += 1) {
+              movies[i].id = i;
+              this.movies.push(movies[i]);
+            }
 
-          for (let i = 0; i < movies.length; i += 1) {
-            movies[i].id = i;
-            this.movies.push(movies[i]);
+            resolve(this.movies);
           }
-
-          resolve(this.movies);
         });
     })
   }
@@ -64,11 +64,12 @@ class Imdb {
 
           if (typeof movie === 'undefined' || !movie) {
             reject('Movie not found!');
+          } else {
+
+            this.lastMovie = movie;
+
+            resolve(movie);
           }
-
-          this.lastMovie = movie;
-
-          resolve(movie);
         });
     });
   }
